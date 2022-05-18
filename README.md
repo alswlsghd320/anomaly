@@ -77,7 +77,8 @@
     unzip test.zip
     ```
 4. Train `multi_train.sh`
+   ```bash
    sh multi_train.sh
-
+   ```
 5. Submit 
 `submission.csv`
