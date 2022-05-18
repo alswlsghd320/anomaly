@@ -26,17 +26,32 @@
 │   └── sample_submission.csv
 │
 ├── dacon-anomaly
+│   ├── config.py
+│   ├── dataloader.py
+│   ├── hardvoting.py
 │   ├── main.py
-│   ├── trainer.py 
-│   ├── dataset.py 
-│   ├── model.py 
-│   ├── loss.py
-│   ├── single_gpu_inference.py
-│   ├── image_model_list.txt
-│   ├── requirement.txt
-
+│   ├── make_df.ipynb
+│   ├── multi_train.sh
+│   ├── network.py
+│   ├── prediction_ensemble.ipynb
+│   ├── test.py
+│   ├── trainer.py
+│   ├── files
+│   │    ├── effb4_bad_5fold.npy
+│   │    ├── softmax_142.npy
+│   │    ├── softmax_156.npy
+│   │    ├── softmax_pillzip_266.npy
+│   │    ├── softmax_pillzip_274.npy
+│   │    ├── softmax_sy_123.npy
+│   │    ├── softmax_sy_133.npy
+│   │    ├── softmax_sy_266.npy
+│   │    ├── softmax_sy_272.npy
+│   ├── utils
+│   │    ├── __init__.py
+│   │    ├── image_utils.py
+│   │    ├── logger_utils.py
+│   │    ├── scheduler_utils.py
 ```
-
 <br>
 
 ## Jupyter Notebook Usage
@@ -61,7 +76,8 @@
     unzip train.zip
     unzip test.zip
     ```
-4. Train `main.py`
+4. Train `multi_train.sh`
+   sh multi_train.sh
 
 5. Submit 
-`./submission_xxx.csv`
+`submission.csv`
