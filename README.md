@@ -1,6 +1,7 @@
 # dacon-anomaly
 
-### Private score 3th 0.90~~
+### Public score 3th 0.90875
+### Private score 3th 0.90494
 
 * 주최 : DACON
 * 주관 : DACON
@@ -15,14 +16,14 @@
 │   ├── train
 │   │    ├── 10001.png
 │   │    ├── ...
-│   │    └── 67678
+│   │    └── 14276.png
 │   ├── test
-│   │    ├── 10000
+│   │    ├── 20001.png
 │   │    ├── ...
-│   │    └── 67677
+│   │    └── 22153.png
 │   │    
-│   ├── train.csv
-│   ├── test.csv
+│   ├── train_df.csv
+│   ├── test_df.csv
 │   └── sample_submission.csv
 │
 ├── dacon-anomaly
