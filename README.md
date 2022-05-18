@@ -66,14 +66,14 @@
 ```
 <br>
 
-## Jupyter Notebook Usage
+## Usage
 - `make_df.ipynb`를 통해 state를 good과 bad로만 구분하는 `train_df_bad.csv`, one class만을 저장하는 `{class}_df.csv` 를 생성할 수 있습니다.
 - `solution.ipynb` 에서 `test.py`와 Inference & Post-processing 과정에 관한 설명을 확인할 수 있습니다.
 
 1. Install Library
     ```
-    pip3 install -r requirement.txt
-    pip3 install jupyter
+    pip install -r requirement.txt
+    pip install jupyter
     ```
 2. Download data.zip from[ https://dacon.io/competitions/official/235870/data](https://dacon.io/competitions/official/235894/data) to data path.
     ```bash
@@ -81,17 +81,17 @@
     mkdir data
     cd data
     (Download data to ./workspace/data/)
-    ```
-3. Unzip train, test data
-    ```bash
-    #./workspace
     unzip data.zip
     unzip train.zip
     unzip test.zip
     ```
-4. Train `multi_train.sh`
+3. Prepare data : You can run this section in this [ipynb](make_df.ipynb)
+
+4. Training
    ```bash
    sh multi_train.sh
    ```
-5. Submit 
-`submission.csv`
+5. Test : You can run this section in [test.py](test.py)
+
+6. Inference & Post-processing : You can run this section in [solution.ipynb](solution.ipynb)
+
