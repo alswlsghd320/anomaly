@@ -67,9 +67,8 @@
 <br>
 
 ## Jupyter Notebook Usage
-- `make_df.ipynb`를 통해 data를 good과 bad로만 구분하는 `train_df_bad.csv`, one class만을 저장하는 `{class}_df.csv` 를 생성할 수 있습니다.
-- `test.py` 로 test set에 대해 TTA를 적용한 단일 모델의 예측값 혹은 앙상블 결과값을 구할 수 있습니다.
-- `solution.ipynb` 에서 모델의 예측값에 후처리를 적용하는 Inference & Post-processing 과정을 거칩니다.
+- `make_df.ipynb`를 통해 state를 good과 bad로만 구분하는 `train_df_bad.csv`, one class만을 저장하는 `{class}_df.csv` 를 생성할 수 있습니다.
+- `solution.ipynb` 에서 `test.py`와 Inference & Post-processing 과정에 관한 설명을 확인할 수 있습니다.
 
 1. Install Library
     ```
