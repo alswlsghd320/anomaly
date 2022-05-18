@@ -13,7 +13,7 @@
     - 따라서, 기존에 학습했던 모델들을 이용해서 앙상블 및 후처리에 대하여 고민을 했습니다.
     - 첫번째로 클래스 불균형으로 인한 good의 과한 예측을 피하고자 하였습니다.
         1. 기본적으로 good인 이미지들은 어떠한 기하학적 변형을 해도 매우 확실하게 good이라고 예측할거라 가정했습니다.
-        2. 너무 과하게 good으로 예측하는 경우를 조금이라도 완화시키고자 각 모델들 output에 softmax를 취한 후 앙상블했습니다..
+        2. 너무 과하게 good으로 예측하는 경우를 조금이라도 완화시키고자 각 모델들 output에 softmax를 취한 후 앙상블했습니다.
         3. 비정상의 경우를 bad로 통일한 후 모델을 학습한 결과를 이용하여 후처리를 진행했습니다.
     - 두번째로 위의 결과를 이용해도 헷갈려하는 클래스들(pill, zipper, toothbrush, transistor, capsule)에 대해 추가 학습을 진행했습니다.
         1. 한 개의 클래스에 대해서만 학습을 한 후 하드보팅 또는 단일 모델의 결과를 가지고 후처리를 진행했습니다. 
@@ -67,13 +67,15 @@
 <br>
 
 ## Jupyter Notebook Usage
+- `make_df.ipynb`를 통해 data를 good과 bad로만 구분하는 `train_df_bad.csv`, one class만을 저장하는 `{class}_df.csv` 를 생성할 수 있습니다.
+- `test.py` 로 test set에 대해 TTA를 적용한 단일 모델의 예측값 혹은 앙상블 결과값을 구할 수 있습니다.
+- `solution.ipynb` 에서 모델의 예측값에 후처리를 적용하는 Inference & Post-processing 과정을 거칩니다.
+
 1. Install Library
     ```
     pip3 install -r requirement.txt
     pip3 install jupyter
     ```
-
-
 2. Download data.zip from[ https://dacon.io/competitions/official/235870/data](https://dacon.io/competitions/official/235894/data) to data path.
     ```bash
     #./workspace
