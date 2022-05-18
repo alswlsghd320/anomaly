@@ -52,7 +52,7 @@
     #./workspace
     mkdir data
     cd data
-    (Download data to ./LG_Plant_Disease_Diagnosis/data/)
+    (Download data to ./workspace/data/)
     ```
 3. Unzip train, test data
     ```bash
