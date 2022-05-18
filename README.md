@@ -1,4 +1,4 @@
-# dacon-anomaly
+# Computer Vision 이상치 탐지 알고리즘 경진대회
 
 ### Public score 3th 0.90875 | Private score 3th 0.90494
 
