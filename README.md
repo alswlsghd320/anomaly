@@ -1,7 +1,6 @@
 # dacon-anomaly
 
-### Public score 3th 0.90875
-### Private score 3th 0.90494
+### Public score 3th 0.90875 | Private score 3th 0.90494
 
 * 주최 : DACON
 * 주관 : DACON
