@@ -72,7 +72,7 @@
 
 1. Install Library
     ```
-    pip install -r requirement.txt
+    pip install -r requirements.txt
     pip install jupyter
     ```
 2. Download data.zip from[ https://dacon.io/competitions/official/235870/data](https://dacon.io/competitions/official/235894/data) to data path.
